@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  root "welcome#index"
-  get '/raw/:env' => "welcome#raw"
+  root "logs#index"
+  get '/raw/:env' => "logs#raw"
 end
