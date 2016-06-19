@@ -13,7 +13,7 @@ module Admin
     end
 
     def raw
-      @logs = File.open("#{Rails.root}/log/#{params[:env]}.log").read
+      @logs = raw_logs params[:env]
     end
 
   end
