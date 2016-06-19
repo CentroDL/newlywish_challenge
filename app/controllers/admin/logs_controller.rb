@@ -1,13 +1,17 @@
-class LogsController < ApplicationController
+module Admin
 
-  include LogsHelper
+  class LogsController < ApplicationController
 
-  def index
-    @logs = get_logs(Rails.env)
-  end
+    include LogsHelper
 
-  def raw
-    @logs = File.open("#{Rails.root}/log/#{params[:env]}.log").read
+    def index
+      @logs = get_logs(Rails.env)
+    end
+
+    def raw
+      @logs = File.open("#{Rails.root}/log/#{params[:env]}.log").read
+    end
+
   end
 
 end
