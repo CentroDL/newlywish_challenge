@@ -3,7 +3,7 @@ class CreateRequests < ActiveRecord::Migration
     create_table :requests do |t|
       t.string :uuid
       t.text :message
-      t.references :log_id, index: true, foreign_key: true
+      t.references :log, index: true, foreign_key: true
 
       t.timestamps null: false
     end

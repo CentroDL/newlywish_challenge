@@ -1,3 +1,3 @@
 class Request < ActiveRecord::Base
-  belongs_to :log_id
+  belongs_to :log
 end
