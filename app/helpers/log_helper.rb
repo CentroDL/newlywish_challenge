@@ -6,6 +6,8 @@ module LogHelper
     #split by the UUID and messages
     log_uuid_pairs = raw_logs.split(/(\[\w{8}-\w{4}-\w{4}-\w{4}-\w{12}])/).reject { |entry| entry.empty? }
 
+    log_uuid_pairs.shift if env == "production"
+
     indexed_logs = {}
     $last_key
 
