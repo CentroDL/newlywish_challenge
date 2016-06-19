@@ -4,7 +4,7 @@ module LogHelper
     raw_logs = File.open( "#{Rails.root}/log/#{env}.log" ).read
 
     #split by the UUID and messages
-    log_uuid_pairs = raw_logs.split(/(\[\w{8}-\w{4}-\w{4}-\w{4}-\w{12}])/).reject { |entry| entry.empty? }
+    log_uuid_pairs = raw_logs.split(/(\[\w{8}-\w{4}-\w{4}-\w{4}-\w{12}\])/).reject { |entry| entry.empty? }
 
     # this is specific to Heroku, hand rolling logging scheme should eliminate the need for this
     log_uuid_pairs.shift if env == "production"
