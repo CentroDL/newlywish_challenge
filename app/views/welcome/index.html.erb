@@ -2,7 +2,7 @@
 
 <% if @logs %>
   <% @logs.each do |uuid, msg| %>
-    <p>[<%= uuid %>]</p>
-    <p><%= msg %></p>
+    <p>UUID: [<%= uuid %>]</p>
+    <p>Message: <%= msg %></p>
   <% end %>
 <% end %>
