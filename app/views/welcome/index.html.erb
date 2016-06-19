@@ -1,7 +1,8 @@
 <h1>Hello World</h1>
 
 <% if @logs %>
-  <% @logs.each do |log| %>
-    <p><%= log %></p>
+  <% @logs.each do |uuid, msg| %>
+    <p>[<%= uuid %>]</p>
+    <p><%= msg %></p>
   <% end %>
 <% end %>
