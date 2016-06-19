@@ -74,7 +74,7 @@ Looking back a lot of my time was burnt doing research but I want to give an acc
 
 ## Thanks!
 
-![Thanks!](http://giphy.com/gifs/thenightlyshow-bernie-sanders-the-nightly-show-WLKAszbETjT8s)
+![Thanks!](https://media.giphy.com/media/WLKAszbETjT8s/giphy.gif)
 
 I'm sorry my app is so bare bones, I've had to context switch back from only solving general MEAN stack problems. I don't believe I've met the requirements of the challenge by any means, but I definitely enjoyed the practice. With a little more time I'd definitely speed up by a lot, but however this pans out, thanks so much for the oppurtunity!
 
