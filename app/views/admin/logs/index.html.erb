@@ -1,8 +1,12 @@
 <h1>Admin View</h1>
 
+<% @errors = ["error", "loaderror", "internal server error"]%>
+
 <% if @logs %>
   <% @logs.each do |uuid, msg| %>
-    <p>UUID: [<%= uuid %>]</p>
-    <p>Message: <%= msg %></p>
+    <div class="log <%= error_message?(msg) ? "error" : "success" %>">
+      <p class="uuid">UUID: [<%= uuid %>]</p>
+      <p class="message">Message: <%= msg %></p>
+    </div>
   <% end %>
 <% end %>

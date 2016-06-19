@@ -31,4 +31,9 @@ module LogsHelper
     indexed_logs
   end
 
+  def error_message?(msg)
+    errors = ["error", "500", "loaderror", "typeerror", "actioncontroller::routingerror"]
+    return errors.any? { |error| msg.downcase.split(" ").include? error }
+  end
+
 end
