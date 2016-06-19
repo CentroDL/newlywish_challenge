@@ -6,6 +6,10 @@ module Admin
 
     def index
       @logs = get_logs(Rails.env)
+
+      if params[:format] == 'json'
+        render json: @logs
+      end
     end
 
     def raw
