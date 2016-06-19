@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
 
   root "admin/logs#index"
-  get '/raw/:env' => "admin/logs#raw"
+  get 'admin/logs/raw/:env' => "admin/logs#raw"
 
 
 end
